@@ -1,0 +1,9 @@
+.home {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.home-detail h1 {
+  font-size: clamp(3.5rem, 10vw, 5.5rem);
+}
