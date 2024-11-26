@@ -12,7 +12,7 @@ header {
 }
 
 header .logo {
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--white-color);
   font-weight: 700;
 }

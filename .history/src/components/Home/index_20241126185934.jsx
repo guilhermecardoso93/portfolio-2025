@@ -7,13 +7,8 @@ export function Home() {
     <section className="home">
       <div className="home-detail">
         <h1>
-          <span style={{ "--i": 2 }} data-text="Guilherme">
-            Guilherme
-          </span>
-          <span style={{ "--i": 1 }} data-text="Cardoso">
-            Cardoso
-          </span>
-        </h1>
+          <span style="--i:4;" data-text='Guilherme'>Guilherme</span>
+          <span style="--i:4;" data-text='Cardoso'>Cardoso</span> </h1>
         <h2>Eu sou um Dev. Front-End Júnior</h2>
         <p>
           Olá! Sou Guilherme, tenho 31 anos e estou em busca de novas

@@ -21,6 +21,7 @@ html {
 
 body {
   color: var(--white-color);
+  height: 100%;
 }
 
 section {
@@ -34,4 +35,5 @@ section {
 section.active {
   visibility: visible;
   opacity: 1;
+  overflow: auto;
 }

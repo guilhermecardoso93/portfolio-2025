@@ -1,23 +1,18 @@
-header {
+footer {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   padding: 1rem 9%;
   background-color: var(--bg-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   z-index: 100;
+  font-size: .5rem;
 }
 
-header .logo {
-  font-size: 2rem;
-  color: var(--white-color);
-  font-weight: 700;
-}
-
-header nav a {
+a {
   font-size: 2rem;
   color: var(--white-color);
   font-weight: 500;

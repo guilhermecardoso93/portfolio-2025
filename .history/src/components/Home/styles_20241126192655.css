@@ -58,7 +58,7 @@
 }
 
 .home-detail p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 1rem 0 2.5rem;
 }
 
@@ -75,7 +75,7 @@
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   color: var(--white-color);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 500;
   transition: 0.5s;
 }

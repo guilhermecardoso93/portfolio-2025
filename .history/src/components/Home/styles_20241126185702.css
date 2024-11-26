@@ -7,48 +7,6 @@
 
 .home-detail h1 {
   font-size: clamp(3.5rem, 10vw, 5.5rem);
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.home-detail h1 span {
-  position: relative;
-  display: inline-block;
-  color: transparent;
-  -webkit-text-stroke: 0.07rem var(--main-color);
-  margin-left: 1rem;
-}
-
-@keyframes display-text {
-
-  25%,
-  100% {
-    display: none;
-  }
-}
-
-.home-detail h1 span::before {
-  content: attr(data-text);
-  position: absolute;
-  width: 0;
-  border-right: 0.3rem solid var(--main-color);
-  color: var(--main-color);
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 4s linear infinite;
-}
-
-@keyframes typing {
-
-  10%,
-  100% {
-    width: 0;
-  }
-
-  70%,
-  90% {
-    width: 100%;
-  }
 }
 
 .home-detail h2 {
@@ -58,7 +16,7 @@
 }
 
 .home-detail p {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   margin: 1rem 0 2.5rem;
 }
 
@@ -75,7 +33,7 @@
   border-radius: 4rem;
   box-shadow: 0 0 1rem var(--main-color);
   color: var(--white-color);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 500;
   transition: 0.5s;
 }

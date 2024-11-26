@@ -1,0 +1,28 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: .2rem 9%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+a {
+  font-size: 2rem;
+  color: var(--white-color);
+  font-weight: 500;
+  margin-left: 3rem;
+  transition: .5s ease;
+}
+
+a svg {
+  font-size: 10px;
+}
+
+header nav a:hover, nav a.active {
+  color: var(--main-color);
+}

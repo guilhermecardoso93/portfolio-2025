@@ -34,4 +34,5 @@ section {
 section.active {
   visibility: visible;
   opacity: 1;
+  overflow: auto;
 }
