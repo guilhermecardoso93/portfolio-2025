@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./components/Home";
 import { Services } from "./components/Serv";
-import { Resume } from "./components/Resume";
 import { Footer } from "./components/Footer";
+import { Resume } from "./components/Resume";
 export function App() {
   return (
     <Router>
@@ -12,6 +12,7 @@ export function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/resume" element={<Resume />} />
+
       </Routes>
       <Footer />
     </Router>

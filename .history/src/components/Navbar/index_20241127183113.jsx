@@ -16,28 +16,16 @@ export function Navbar() {
         <Link to="/" className={location.pathname === "/" ? "active" : ""}>
           Home
         </Link>
-        <Link
-          to="/services"
-          className={location.pathname === "/services" ? "active" : ""}
-        >
+        <Link to="/services" className={location.pathname === "/services" ? "active" : ""}>
           Services
         </Link>
-        <Link
-          to="/resume"
-          className={location.pathname === "/resume" ? "active" : ""}
-        >
+        <Link to="/resume" className={location.pathname === "/resume" ? "active" : ""}>
           Resume
         </Link>
-        <Link
-          to="/projetos"
-          className={location.pathname === "/projetos" ? "active" : ""}
-        >
+        <Link to="/projetos" className={location.pathname === "/projetos" ? "active" : ""}>
           Projetos
         </Link>
-        <Link
-          to="/contato"
-          className={location.pathname === "/contato" ? "active" : ""}
-        >
+        <Link to="/contato" className={location.pathname === "/contato" ? "active" : ""}>
           Contato
         </Link>
       </nav>

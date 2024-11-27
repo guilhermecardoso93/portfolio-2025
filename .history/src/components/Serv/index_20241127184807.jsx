@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUp, BriefcaseBusiness } from "lucide-react";
+import { ArrowDown, BriefcaseBusiness } from "lucide-react";
 import "./styles.css";
 export function Services() {
   return (
@@ -37,7 +37,7 @@ export function Services() {
           <div className="icon">
             <BriefcaseBusiness />
             <a href="#">
-              <ArrowUp size={36} />
+              <ArrowDown size={36} />
             </a>
           </div>
           <h3>Web Development</h3>

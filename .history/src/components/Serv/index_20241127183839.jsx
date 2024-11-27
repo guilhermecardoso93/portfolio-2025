@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUp, BriefcaseBusiness } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import "./styles.css";
 export function Services() {
   return (
@@ -9,9 +9,8 @@ export function Services() {
       <div className="services-container">
         <div className="services-box">
           <div className="icon">
-            <BriefcaseBusiness />
             <a href="#">
-              <ArrowDown size={42} />
+              <ArrowDown />
             </a>
           </div>
           <h3>Web Development</h3>
@@ -22,9 +21,8 @@ export function Services() {
         </div>
         <div className="services-box">
           <div className="icon">
-            <BriefcaseBusiness />
             <a href="#">
-              <ArrowDown size={42} />
+              <ArrowDown />
             </a>
           </div>
           <h3>Web Development</h3>
@@ -35,9 +33,8 @@ export function Services() {
         </div>
         <div className="services-box">
           <div className="icon">
-            <BriefcaseBusiness />
             <a href="#">
-              <ArrowUp size={36} />
+              <ArrowDown />
             </a>
           </div>
           <h3>Web Development</h3>
@@ -48,9 +45,8 @@ export function Services() {
         </div>
         <div className="services-box">
           <div className="icon">
-            <BriefcaseBusiness />
             <a href="#">
-              <ArrowDown size={42} />
+              <ArrowDown />
             </a>
           </div>
           <h3>Web Development</h3>
@@ -61,9 +57,8 @@ export function Services() {
         </div>
         <div className="services-box">
           <div className="icon">
-            <BriefcaseBusiness />
             <a href="#">
-              <ArrowDown size={42} />
+              <ArrowDown />
             </a>
           </div>
           <h3>Web Development</h3>
@@ -74,9 +69,8 @@ export function Services() {
         </div>
         <div className="services-box">
           <div className="icon">
-            <BriefcaseBusiness />
             <a href="#">
-              <ArrowDown size={42} />
+              <ArrowDown />
             </a>
           </div>
           <h3>Web Development</h3>

@@ -1,8 +1,7 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./components/Home";
 import { Services } from "./components/Serv";
-import { Resume } from "./components/Resume";
 import { Footer } from "./components/Footer";
 export function App() {
   return (
@@ -11,7 +10,6 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/resume" element={<Resume />} />
       </Routes>
       <Footer />
     </Router>

@@ -1,0 +1,17 @@
+.resume-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.resume-box h2 {
+  font-size: 4.5rem;
+}
+
+.resume-box p {
+  font-size: 1.6rem;
+}
+
+.resume-box .desc {
+  margin: 2rem 0 2.5rem;
+}

@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUp, BriefcaseBusiness } from "lucide-react";
+import { ArrowDown, BriefcaseBusiness } from "lucide-react";
 import "./styles.css";
 export function Services() {
   return (
@@ -11,7 +11,20 @@ export function Services() {
           <div className="icon">
             <BriefcaseBusiness />
             <a href="#">
-              <ArrowDown size={42} />
+            <ArrowDown size={42} />
+            </a>
+          </div>
+          <h3>Web Development</h3>
+          <p>
+            Lorem Ipsum is Lorem Ipsum and it is used in several versions of
+            Lorem Ipsum.
+          </p>
+        </div>
+        <div className="services-box">
+          <div className="icon">
+            <BriefcaseBusiness />
+            <a href="#">
+            <ArrowDown size={42} />
             </a>
           </div>
           <h3>Web Development</h3>
@@ -37,7 +50,7 @@ export function Services() {
           <div className="icon">
             <BriefcaseBusiness />
             <a href="#">
-              <ArrowUp size={36} />
+            <ArrowDown size={42} />
             </a>
           </div>
           <h3>Web Development</h3>
@@ -50,7 +63,7 @@ export function Services() {
           <div className="icon">
             <BriefcaseBusiness />
             <a href="#">
-              <ArrowDown size={42} />
+            <ArrowDown size={42} />
             </a>
           </div>
           <h3>Web Development</h3>
@@ -63,20 +76,7 @@ export function Services() {
           <div className="icon">
             <BriefcaseBusiness />
             <a href="#">
-              <ArrowDown size={42} />
-            </a>
-          </div>
-          <h3>Web Development</h3>
-          <p>
-            Lorem Ipsum is Lorem Ipsum and it is used in several versions of
-            Lorem Ipsum.
-          </p>
-        </div>
-        <div className="services-box">
-          <div className="icon">
-            <BriefcaseBusiness />
-            <a href="#">
-              <ArrowDown size={42} />
+            <ArrowDown size={42} />
             </a>
           </div>
           <h3>Web Development</h3>
