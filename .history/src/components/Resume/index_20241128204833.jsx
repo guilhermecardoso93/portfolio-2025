@@ -3,21 +3,6 @@ import "./styles.css";
 import { Instagram } from "lucide-react";
 export function Resume() {
   const [activeTab, setActiveTab] = useState("Experience"); // Estado para rastrear o botão ativo
-
-  const calcularIdade = (dataNascimento) => {
-    const hoje = new Date();
-    const nascimento = new Date(dataNascimento);
-    let idade = hoje.getFullYear() - nascimento.getFullYear();
-    const mes = hoje.getMonth() - nascimento.getMonth();
-
-    if (mes < 0 || (mes === 0 && hoje.getDate() < nascimento.getDate())) {
-      idade--;
-    }
-
-    return idade;
-  };
-
-  const idade = calcularIdade("1993-10-24");
   return (
     <section className="resume active">
       <div className="resume-container">
@@ -172,70 +157,8 @@ export function Resume() {
             <p className="desc">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa.
             </p>
-            <div className="resume-list">
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  Nome:
-                  <span>Guilherme Cardoso da Silva</span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  Gênero:
-                  <span>Male</span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  Idade:
-                  <span>{idade} </span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  Status:
-                  <span>Solteiro </span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  Cidade:
-                  <span>São Paulo | Curitiba </span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  Nacionalidade:
-                  <span>Brasileiro </span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  Telefone:
-                  <span>+55 22 99904-7309</span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  E-mail:
-                  <span>guilherme_cardosogui@hotmail.com </span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  idiomas:
-                  <span>Português | English </span>
-                </p>
-              </div>
+            <div className="resume-item">
+              
             </div>
           </div>
         </div>

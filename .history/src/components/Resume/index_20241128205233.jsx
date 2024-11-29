@@ -194,48 +194,6 @@ export function Resume() {
                   <span>{idade} </span>
                 </p>
               </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  Status:
-                  <span>Solteiro </span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  Cidade:
-                  <span>São Paulo | Curitiba </span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  Nacionalidade:
-                  <span>Brasileiro </span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  Telefone:
-                  <span>+55 22 99904-7309</span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  E-mail:
-                  <span>guilherme_cardosogui@hotmail.com </span>
-                </p>
-              </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  idiomas:
-                  <span>Português | English </span>
-                </p>
-              </div>
             </div>
           </div>
         </div>

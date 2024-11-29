@@ -13,10 +13,7 @@ export function Footer() {
         <a href="https://www.instagram.com/guicardoso93" target="_blank">
           <Instagram />
         </a>
-        <a
-          href="https://www.linkedin.com/in/guilherme-cardoso-35710b103/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/guilherme-cardoso-35710b103/" target="_blank">
           <Linkedin />
         </a>
         <a href="https://api.whatsapp.com/send?phone=5522999047309&text=Oi%20Esta%20falando%20com%20o%20Guilherme!">

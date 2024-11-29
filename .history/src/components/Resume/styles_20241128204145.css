@@ -113,7 +113,6 @@
   position: relative;
   align-items: center;
   height: auto;
-  margin-top: 5rem;
 }
 
 .resume-details.skills .resume-item img {
@@ -129,43 +128,6 @@
   top: -20%;
   background-color: var(--white-color);
   color: var(--bg-color);
-  border-radius: 1rem;
   font-size: 1.6rem;
   padding: 0.5rem 1rem;
-  pointer-events: none;
-  opacity: 0;
-  transform: scale(0.9);
-  transition: all 0.3s ease;
-  /* Para suavizar as animações */
-}
-
-.resume-details.skills .resume-item:hover span {
-  top: -10%;
-  opacity: 1;
-  transform: scale(1);
-}
-
-.resume-details.about .resume-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.resume-details.about .resume-item {
-  height: auto;
-  padding: 0 0 .5rem;
-  background: transparent;
-  width: 100%;
-}
-
-.resume-details.about .resume-item p {
-  color: var(--main-color);
-  font-size: 1.4rem;
-
-}
-
-.resume-details.about .resume-item p span {
-  color: var(--white-color);
-  margin-left: 1rem;
-  font-size: 1.8rem;
 }

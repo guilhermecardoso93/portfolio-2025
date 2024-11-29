@@ -229,13 +229,6 @@ export function Resume() {
                   <span>guilherme_cardosogui@hotmail.com </span>
                 </p>
               </div>
-              <div className="resume-item">
-                <p>
-                  {" "}
-                  idiomas:
-                  <span>Português | English </span>
-                </p>
-              </div>
             </div>
           </div>
         </div>

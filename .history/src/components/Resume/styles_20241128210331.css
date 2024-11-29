@@ -145,27 +145,13 @@
   transform: scale(1);
 }
 
-.resume-details.about .resume-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.resume-detail.about .resume-list {
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 }
 
-.resume-details.about .resume-item {
+.resume-detail.about .resume-item {
   height: auto;
   padding: 0 0 .5rem;
   background: transparent;
-  width: 100%;
-}
-
-.resume-details.about .resume-item p {
-  color: var(--main-color);
-  font-size: 1.4rem;
-
-}
-
-.resume-details.about .resume-item p span {
-  color: var(--white-color);
-  margin-left: 1rem;
-  font-size: 1.8rem;
 }

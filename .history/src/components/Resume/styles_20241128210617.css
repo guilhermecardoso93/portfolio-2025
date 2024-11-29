@@ -147,8 +147,6 @@
 
 .resume-details.about .resume-list {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .resume-details.about .resume-item {
@@ -167,5 +165,5 @@
 .resume-details.about .resume-item p span {
   color: var(--white-color);
   margin-left: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
