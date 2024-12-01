@@ -1,0 +1,82 @@
+.portfolio-container {
+  display: flex;
+}
+
+.portfolio-detail {
+  display: none;
+}
+
+.portfolio-detail.active {
+  display: block;
+  width: 100%;
+  margin: 3rem;
+  align-items: left;
+}
+
+
+.portfolio-box .portfolio-detail .numb {
+  font-size: 8rem;
+  -webkit-text-stroke: 0.07rem var(--white-color);
+  color: transparent;
+  line-height: 1;
+  text-align: center;
+}
+
+.portfolio-box h3 {
+  font-size: 3.5rem;
+  margin: .8rem 0 2rem;
+}
+
+.portfolio-box p {
+  font-size: 1.6rem;
+}
+
+.portfolio-box .tech {
+  margin: 2rem 0;
+  color: var(--main-color);
+  border-bottom: .1rem solid var(--white-color);
+  padding-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+
+}
+
+.portfolio-box .tech a {
+  text-decoration: none;
+  color: var(--white-color);
+  cursor: pointer;
+  position: relative;
+  padding: 1.3rem;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.portfolio-box .tech a:hover {
+  color: var(--main-color);
+}
+
+.swiper {
+  width: 80%;
+  height: 80%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  width: 45rem;
+  min-height: 20rem;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.img-slide {
+  display: flex;
+  align-items: center;
+  
+}

@@ -1,0 +1,130 @@
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  /* Itens lado a lado inicialmente */
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-form-container {
+  flex: 0.75;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+
+.contact-container .contact-box:first-child {
+  align-self: center;
+}
+
+.contact-box h2 {
+  font-size: 2.3rem;
+}
+
+.contact-box p {
+  font-size: 1.6rem;
+}
+
+.contact-box .desc {
+  margin: 1.5rem 0 2.5rem;
+}
+
+.contact-box .contact-detail {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.contact-detail .icon {
+  display: inline-flex;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-size: 3rem;
+  padding: 1.2rem;
+  border-radius: .6rem;
+  margin-right: 1.5rem;
+}
+
+.contact-detail .detail p:first-child {
+  color: var(--main-color)
+}
+
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--second-bg-color);
+  padding: 2.5rem 3.5rem 3.5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.contact-box .heading {
+  font-size: 3.5rem;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.form-label textarea {
+  grid-column: 1/-1;
+  height: 26rem;
+  resize: none;
+  width: 100%;
+}
+
+.contact-box textarea, input {
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  border: 0.15rem solid var(--bg-color);
+  border-radius: .6rem;
+  font-size: 1.6rem;
+  color: var(--white-color);
+  margin: 2rem 0 1rem 0;
+  width: 100%;
+}
+
+
+.contact-box textarea:focus, input:focus {
+  border-color: var(--main-color);
+}
+
+.contact-box .btn {
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 30%;
+  height: 6rem;
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    /* Empilha os itens em telas menores */
+    gap: 1.5rem;
+  }
+
+  .contact-box textarea, input {
+    margin: 1rem;
+  }
+
+  .contact-box {
+    margin-bottom: 4rem;
+
+  }
+
+  .contact-box .btn {
+    margin-top: 0;
+    width: 30%;
+    height: 6rem;
+    font-size: 3rem;
+    top: 10px;
+  }
+}

@@ -1,0 +1,34 @@
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Duas colunas com tamanhos iguais */
+  gap: 3rem;
+  /* Espaço entre os itens */
+}
+
+.portfolio-detail {
+  display: none;
+  /* Oculta o detalhe por padrão */
+}
+
+.portfolio-detail.active {
+  display: block;
+  /* Mostra o detalhe quando possui a classe 'active' */
+}
+
+.portfolio-box .portfolio-detail .numb {
+  font-size: 8rem;
+  /* Tamanho do texto grande */
+  -webkit-text-stroke: 0.07rem var(--white-color);
+  /* Contorno do texto */
+  color: transparent;
+  /* Cor interna do texto */
+  line-height: 1;
+  /* Altura da linha igual ao tamanho da fonte */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+}
+
+.portfolio-box h3 {
+  font-size: 3.5rem;
+}

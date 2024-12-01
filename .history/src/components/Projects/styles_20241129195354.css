@@ -1,0 +1,65 @@
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Duas colunas com tamanhos iguais */
+  gap: 3rem;
+  /* Espaço entre os itens */
+}
+
+.portfolio-detail {
+  display: none;
+  /* Oculta o detalhe por padrão */
+}
+
+.portfolio-detail.active {
+  display: block;
+  /* Mostra o detalhe quando possui a classe 'active' */
+}
+
+.portfolio-box .portfolio-detail .numb {
+  font-size: 8rem;
+  /* Tamanho do texto grande */
+  -webkit-text-stroke: 0.07rem var(--white-color);
+  /* Contorno do texto */
+  color: transparent;
+  /* Cor interna do texto */
+  line-height: 1;
+  /* Altura da linha igual ao tamanho da fonte */
+  text-align: center;
+  /* Centraliza o texto horizontalmente */
+}
+
+.portfolio-box h3 {
+  font-size: 3.5rem;
+  margin: .8rem 0 2rem;
+}
+
+.portfolio-box p {
+  font-size: 1.6rem;
+}
+
+.portfolio-box .tech {
+  margin: 2rem 0;
+  color: var(--main-color);
+  border-bottom: .1rem solid var(--white-color);
+  padding-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+
+}
+
+.portfolio-box .tech a {
+  text-decoration: none;
+  color: var(--white-color);
+  cursor: pointer;
+  position: relative;
+  padding: 1.3rem;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.portfolio-box .tech a:hover {
+  color: var(--main-color);
+}

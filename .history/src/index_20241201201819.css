@@ -1,0 +1,117 @@
+/* Resetando o padding e margin de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+
+:root {
+    --bg-color: #121314;
+    --second-bg-color: #17171a;
+    --main-color: #0ebdf3;
+    --white-color: #f2f2f2;
+    --disabled-color: #fff3;
+}
+
+/* Fonte */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--white-color);
+    padding-bottom: 6rem; /* Espaçamento para o footer */
+}
+
+/* Animação para as barras */
+.bars-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: 0; /* Alinha as barras no topo */
+}
+
+.bars-box .bar {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    animation: hide-bars 0.5s ease-in-out both;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+/* Animação de esconder as barras */
+@keyframes hide-bars {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* Animação de mostrar as barras */
+@keyframes show-bars {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Ativa a animação das barras */
+.bars-box.active .bar {
+    animation: show-bars 0.5s ease-in-out both;
+    animation-delay: calc(0.1s * var(--i)); /* Ajuste o intervalo */
+}
+
+/* Estilo das seções */
+section {
+    position: absolute;
+    width: 100%;
+    padding: 7rem 9% 3.5rem;
+    margin-bottom: 4rem; /* Adiciona uma distância da parte inferior para o footer */
+    visibility: hidden; /* Inicialmente oculto */
+    opacity: 0;
+}
+
+/* Animação de aparecer a seção */
+section.active {
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.6s;
+    visibility: visible;
+    opacity: 1;
+    overflow: hidden;
+}
+
+/* Keyframes para a animação de aparecer a seção */
+@keyframes show-content {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* Estilo do footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
