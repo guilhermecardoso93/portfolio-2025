@@ -1,5 +1,5 @@
 // Importação de imagens locais
-import { img16, img17, img18, img19, img20, img21, img23 } from "./images/imagens";
+import { img16, img17, img18, img19, img20, img21, img23 } from "./images";
 
 // Array de projetos com detalhes sobre cada um
 export const projects = [
