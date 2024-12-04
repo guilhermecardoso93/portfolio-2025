@@ -1,0 +1,116 @@
+@mixin vp-anim($radius, $pname, $deg: 360deg) {
+  @-webkit-keyframes rot-#{$pname} {
+    from {
+      -webkit-transform: rotate(0deg) translateY(-#{$radius}) rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg) translateY(-#{$radius}) rotate(-#{$deg});
+    }
+  }
+  @-moz-keyframes rot-#{$pname} {
+    from {
+      -moz-transform: rotate(0deg) translateY(-#{$radius}) rotate(0deg);
+    }
+    to {
+      -moz-transform: rotate(360deg) translateY(-#{$radius}) rotate(-#{$deg});
+    }
+  }
+  @keyframes rot-#{$pname} {
+    from {
+      transform: rotate(0deg) translateY(-#{$radius}) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateY(-#{$radius}) rotate(-#{$deg});
+    }
+  }
+}
+
+$baseUnit: 0.1; // Velocidade do sistema
+$sunRad: 72px; // Raio do sol
+$rFactor: 2; // Fator para ajustar o raio das órbitas
+$middleOffset: 800px;
+
+$scale: 0.75; // Escala para ajustar a visualização
+$middle: $middleOffset * (1 / $scale);
+
+$planets: (
+  ("mer", 8.8s * $baseUnit, (6px * $rFactor) + $sunRad, 1.75px, #888),
+  ("ven", 22.5s * $baseUnit, (9px * $rFactor) + $sunRad, 2.75px, #f5f9be),
+  ("ear", 36.5s * $baseUnit, (15px * $rFactor) + $sunRad, 3.5px, #4b94f9),
+  ("mar", 68.7s * $baseUnit, (23px * $rFactor) + $sunRad, 3px, #dd411a),
+  ("jup", 433.2s * $baseUnit, (78px * $rFactor) + $sunRad, 35px, #eaad3b),
+  ("sat", 1075.9s * $baseUnit, (145px * $rFactor) + $sunRad, 29px, #d6cd93),
+  ("ura", 3068.7s * $baseUnit, (288px * $rFactor) + $sunRad, 13px, #bfeef2),
+  ("nep", 6019s * $baseUnit, (450px * $rFactor) + $sunRad, 12px, #363ed7),
+  ("plu", 9046.5s * $baseUnit, (587px * $rFactor) + $sunRad, 1.5px, #963)
+);
+
+body {
+  background-color:var(--bg-color);
+  background-image: url("https://cssanimation.rocks/starwars/images/bg.jpg");
+  background-size: 29%;
+  background-repeat: none;
+  //min-height: 1200px * $scale;
+  overflow: hidden;
+
+}
+
+.system {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale($scale);
+}
+
+.sun {
+  width: $sunRad * 2;
+  height: $sunRad * 2;
+  border-radius: $sunRad;
+  position: absolute;
+  top: $middle;
+  left: 50%;
+  margin: -$sunRad;
+  background-image: url("http://sdo.gsfc.nasa.gov/assets/img/latest/latest_256_HMIIF.jpg");
+  background-size: $sunRad * 2;
+  background-repeat: no-repeat;
+}
+
+@each $planet in $planets {
+  $name: nth($planet, 1);
+  $orb: nth($planet, 2);
+  $rad: nth($planet, 3);
+  $prad: nth($planet, 4);
+  $col: nth($planet, 5);
+
+  @include vp-anim($rad, $name);
+
+  .#{$name} {
+    width: $prad * 2;
+    height: $prad * 2;
+    border-radius: 50%;
+    background-color: $col;
+    position: absolute;
+    top: $middle;
+    left: 50%;
+    margin: -$prad;
+    animation: rot-#{$name} $orb infinite linear;
+    z-index: 200;
+  }
+  .#{$name}-path {
+    $orbitPath: $rad * 2;
+    width: $orbitPath;
+    height: $orbitPath;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    top: $middle;
+    left: 50%;
+    margin: -($orbitPath / 2);
+    border: solid 1px #444;
+  }
+}
+
+// Outros elementos seguem o mesmo padrão...
+

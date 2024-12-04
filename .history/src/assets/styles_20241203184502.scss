@@ -1,0 +1,34 @@
+@each $planet in $planets {
+  $name: list.nth($planet, 1);
+  $orb: list.nth($planet, 2);
+  $rad: list.nth($planet, 3);
+  $prad: list.nth($planet, 4);
+  $col: list.nth($planet, 5);
+
+  @include vp-anim($rad, $name);
+
+  .#{$name} {
+    width: $prad * 2;
+    height: $prad * 2;
+    border-radius: 50%;
+    background-color: $col;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rot-#{$name} $orb infinite linear;
+    z-index: 200;
+  }
+  .#{$name}-path {
+    $orbitPath: $rad * 2;
+    width: $orbitPath;
+    height: $orbitPath;
+    border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px #444;
+  }
+}

@@ -89,4 +89,53 @@ export const projects = [
     repo: "https://github.com/guilhermecardoso93/desafio5",
     img: "https://user-images.githubusercontent.com/79944203/195635638-dc2a3d92-2d4d-454c-a112-6e936e2461e4.png",
   },
+  {
+    title: "Olá Mundo Alura",
+    url: "https://ola-mundo-alura-opal.vercel.app/",
+    repo: "https://github.com/guilhermecardoso93/ola-mundo-alura",
+    img: "https://private-user-images.githubusercontent.com/79944203/392176588-deef0706-61fb-4f26-ac7f-0da25cb75c84.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMyNzExOTIsIm5iZiI6MTczMzI3MDg5MiwicGF0aCI6Ii83OTk0NDIwMy8zOTIxNzY1ODgtZGVlZjA3MDYtNjFmYi00ZjI2LWFjN2YtMGRhMjVjYjc1Yzg0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjA0VDAwMDgxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM1MWNmMjBmNDIyNjhiYWFjZTA2NTYyYzQ3MzI0ZWI3ZDY3MjkwZWEyZTQxZmYxNTM1ZjY0MjBhM2VhZTFhZTMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.9LvXmR-Deyzr93Sjf0s7JtbuxnuZHdXEm57V9ex6t34",
+  },
+  {
+    title: "Geek Alura",
+    url: "https://alura-geek-eight-mocha.vercel.app/",
+    repo: "https://github.com/guilhermecardoso93/alura-geek",
+    img: "https://private-user-images.githubusercontent.com/79944203/392177265-bf5d0a4e-cd10-4bc9-a78c-5e906b6cb33c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMyNzE0NzIsIm5iZiI6MTczMzI3MTE3MiwicGF0aCI6Ii83OTk0NDIwMy8zOTIxNzcyNjUtYmY1ZDBhNGUtY2QxMC00YmM5LWE3OGMtNWU5MDZiNmNiMzNjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjA0VDAwMTI1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTVjYjNkOTg3ZmNlZjI0MWQwYTdiMzM5ZGM2NTUwYmVhMGYwMDU3YzZjNGQ4YWQ5YjM3MjMzNjI1MzY3MzRjYjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.SjMVpQ62FcWLDhMnlGneTHev_qRF1cHCSKXUmmKw96U",
+  },
+  {
+    title: "NLW Expert Notes",
+    url: "https://nlw-expert-notes-azure.vercel.app/",
+    repo: "https://github.com/guilhermecardoso93/nlw-expert-notes",
+    img: "https://private-user-images.githubusercontent.com/79944203/392179282-59a09a27-25c3-410d-9620-a7ba95b5a0a2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMyNzIyMDQsIm5iZiI6MTczMzI3MTkwNCwicGF0aCI6Ii83OTk0NDIwMy8zOTIxNzkyODItNTlhMDlhMjctMjVjMy00MTBkLTk2MjAtYTdiYTk1YjVhMGEyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjA0VDAwMjUwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcwMmIzMjRkZjFlZDM3NjNiODA5ODVkNzBjMTIzYTFjZDI2YTg3NDBjMmRkNjRmMDM1MTgxYmU1ZGQzYTczMWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.xiOvfGBhjEomReLJD2C5GAgGJH_vDrWXm0dXDWTwN8I",
+  },
+  {
+    title: "The Weirdos NFTW Website",
+    url: "https://the-weirdos-nft-website-starter-code-swart.vercel.app/",
+    repo: "https://github.com/guilhermecardoso93/The-Weirdos-NFT-Website-Starter-Code",
+    img: "https://private-user-images.githubusercontent.com/79944203/287848500-0a5bd101-920b-4d32-b93c-e5c59288c31d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMyNzIzNzQsIm5iZiI6MTczMzI3MjA3NCwicGF0aCI6Ii83OTk0NDIwMy8yODc4NDg1MDAtMGE1YmQxMDEtOTIwYi00ZDMyLWI5M2MtZTVjNTkyODhjMzFkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjA0VDAwMjc1NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg4NGRjMjc3NDBiOWIyZjI2MjdjMzUzYmNmN2IzYjcwNmRkOTUyMTQxNGFlOGFhNjRiNjViZDQ2ZTYzZGIwN2MmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.xIXEK4Z451GEtiTuasa9baLYTdZfN5rptd0hgU2YPv0",
+  },
+  {
+    title: "Barbie Site",
+    url: "https://sitebarbie.vercel.app/",
+    repo: "https://github.com/guilhermecardoso93/sitebarbie",
+    img: "https://private-user-images.githubusercontent.com/79944203/392180632-7f777985-be1d-49e7-a5e8-5313e8950fb9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMyNzI2NDMsIm5iZiI6MTczMzI3MjM0MywicGF0aCI6Ii83OTk0NDIwMy8zOTIxODA2MzItN2Y3Nzc5ODUtYmUxZC00OWU3LWE1ZTgtNTMxM2U4OTUwZmI5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjA0VDAwMzIyM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZkYzkzYjIyNTUzY2FhYTUyM2MxZjlmYjA3MDU5NDhiYjE2YTMyYmU3ZDU2NjA1ZWZjYjIxZGYyZjU0NmJlZjcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.HGwkimwcPqBNg84fDS4ZtvCZ6_-9ev-Z6wfD00lEX7o",
+  },
+  {
+    title: "Spotify TailwindCSS",
+    url: "https://tailwind-spotify-seven.vercel.app/",
+    repo: "https://github.com/guilhermecardoso93/sitebarbie",
+    img: "https://user-images.githubusercontent.com/79944203/232636903-7a056396-9605-4dfb-9be9-fa9a11b69ce7.png",
+  },
+  {
+    title: "Explorer Card",
+    url: "https://explorer-lab-01-tawny.vercel.app/",
+    repo: "https://github.com/guilhermecardoso93/explorer-lab-01",
+    img: "https://github.com/guilhermecardoso93/explorer-lab-01/raw/aula-3/.github/project.png",
+  },
+  {
+    title: "Ignite Call",
+    url: "https://ignite-call-eosin.vercel.app/",
+    repo: "https://github.com/guilhermecardoso93/ignite-call",
+    img: "https://private-user-images.githubusercontent.com/79944203/392183821-a26757f0-d8c7-4852-8868-3030cbe56c92.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMyNzM3MTksIm5iZiI6MTczMzI3MzQxOSwicGF0aCI6Ii83OTk0NDIwMy8zOTIxODM4MjEtYTI2NzU3ZjAtZDhjNy00ODUyLTg4NjgtMzAzMGNiZTU2YzkyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjA0VDAwNTAxOVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZlNWU2MDc3NmRhNTExZTM0YzU0Y2JlZjMxYTcxNWIwNDc2YTdkNTA2OWNiYzExOTYxYzQ5MWU1YjVkMjIzNzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.K04a0Kom2zKUP8GR5_7j0YnSKU7i-KQS5X3YIMsO_Xs",
+  }
+
 ];

@@ -1,0 +1,54 @@
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.2rem;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  font-size: 1.3rem;
+  color: var(--main-color);
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* Permite quebra de linha para telas pequenas */
+}
+
+footer .sci-footer {
+  display: flex;
+  flex-wrap: wrap;
+  /* Ajusta os ícones em várias linhas, se necessário */
+  justify-content: center;
+  gap: 0.8rem;
+  /* Espaçamento entre os itens */
+}
+
+footer .sci-footer a {
+  display: inline-flex;
+  padding: 0.8rem;
+  font-size: 2rem;
+  color: var(--main-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+footer .sci-footer a:hover {
+  color: var(--white-color);
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  footer {
+    font-size: 1rem;
+    /* Reduz o tamanho da fonte */
+    padding: 0.5rem;
+  }
+
+  footer .sci-footer a {
+    font-size: 0.9rem;
+    /* Ajusta o tamanho dos ícones */
+    margin: 0.4rem;
+    /* Reduz o espaçamento em telas menores */
+  }
+}
