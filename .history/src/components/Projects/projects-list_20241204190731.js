@@ -106,13 +106,13 @@ export const projects = [
     title: "Geek Alura",
     url: "https://alura-geek-eight-mocha.vercel.app/",
     repo: "https://github.com/guilhermecardoso93/alura-geek",
-    img: { img17 },
+    img: "https://github.com/guilhermecardoso93/alura-geek/blob/master/392177265-bf5d0a4e-cd10-4bc9-a78c-5e906b6cb33c.png?raw=true",
   },
   {
     title: "NLW Expert Notes",
     url: "https://nlw-expert-notes-azure.vercel.app/",
     repo: "https://github.com/guilhermecardoso93/nlw-expert-notes",
-    img: { img18 },
+    img: { img18},
   },
   {
     title: "The Weirdos NFTW Website",
