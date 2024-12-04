@@ -1,36 +1,35 @@
 @mixin vp-anim($radius, $pname, $deg: 360deg) {
   @-webkit-keyframes rot-#{$pname} {
     from {
-      -webkit-transform: rotate(0deg) translateY(-#{$radius}) rotate(0deg);
+      -webkit-transform: rotate(0deg) translatey(-$radius) rotate(0deg);
     }
     to {
-      -webkit-transform: rotate(360deg) translateY(-#{$radius}) rotate(-#{$deg});
+      -webkit-transform: rotate(360deg) translatey(-$radius) rotate(-$deg);
     }
   }
   @-moz-keyframes rot-#{$pname} {
     from {
-      -moz-transform: rotate(0deg) translateY(-#{$radius}) rotate(0deg);
+      -moz-transform: rotate(0deg) translatey(-$radius) rotate(0deg);
     }
     to {
-      -moz-transform: rotate(360deg) translateY(-#{$radius}) rotate(-#{$deg});
+      -moz-transform: rotate(360deg) translatey(-$radius) rotate(-$deg);
     }
   }
   @keyframes rot-#{$pname} {
     from {
-      transform: rotate(0deg) translateY(-#{$radius}) rotate(0deg);
+      transform: rotate(0deg) translatey(-$radius) rotate(0deg);
     }
     to {
-      transform: rotate(360deg) translateY(-#{$radius}) rotate(-#{$deg});
+      transform: rotate(360deg) translatey(-$radius) rotate(-$deg);
     }
   }
 }
 
-$baseUnit: 0.1; // Velocidade do sistema
-$sunRad: 72px; // Raio do sol
-$rFactor: 2; // Fator para ajustar o raio das órbitas
+$baseUnit: 0.1; // Speed of Orrery. At 1, 1 sec = 1 day
+$sunRad: 72px; // Radius of the sun, added to orbit radii
+$rFactor: 2; // Adding a radius factor so orbit radii are easier to observe
 $middleOffset: 800px;
-
-$scale: 0.75; // Escala para ajustar a visualização
+$scale: 0.75; // Play around with changing this to change the visible motion default: 0.75
 $middle: $middleOffset * (1 / $scale);
 
 $planets: (
@@ -48,9 +47,9 @@ $planets: (
 body {
   background-color: var(--bg-color);
   background-image: url("https://cssanimation.rocks/starwars/images/bg.jpg");
-  background-size: 29%;
-  background-repeat: none;
-  min-height: 1200px * $scale;
+  background-size: 33%;
+  background-repeat: repeat;
+  min-height: 2700px * $scale;
 }
 
 .system {
@@ -61,7 +60,6 @@ body {
   height: 100%;
   transform: scale($scale);
 }
-
 @media screen and (max-width: 900px) {
   .system {
     display: none;
@@ -102,6 +100,7 @@ body {
     animation: rot-#{$name} $orb infinite linear;
     z-index: 200;
   }
+
   .#{$name}-path {
     $orbitPath: $rad * 2;
     width: $orbitPath;
@@ -111,9 +110,143 @@ body {
     position: absolute;
     top: $middle;
     left: 50%;
-    margin: ($orbitPath / 2);
+    margin: -($orbitPath / 2);
     border: solid 1px #444;
   }
 }
 
-// Outros elementos seguem o mesmo padrão...
+@include vp-anim(7px, lune);
+
+.lune {
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  $lunOrb: 2.7s * $baseUnit;
+  top: 50%;
+  left: 50%;
+  margin: -1.5px;
+  animation: rot-lune $lunOrb infinite linear;
+}
+
+.mar {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #fff,
+    #fff 1px,
+    transparent 1px,
+    transparent 5px
+  );
+}
+
+@include vp-anim(7px, pho);
+@include vp-anim(9px, dem);
+
+.pho,
+.dem {
+  width: 1px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.pho {
+  $phoOrb: 1.5s * $baseUnit;
+  margin: -1px;
+  animation: rot-pho $phoOrb infinite linear;
+}
+
+.dem {
+  $demOrb: 2s * $baseUnit;
+  margin: -1px;
+  animation: rot-dem $demOrb infinite linear;
+}
+
+$jupR: 35px;
+
+.jove {
+  width: 2px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: $jupR;
+  left: 50%;
+}
+
+@include vp-anim($jupR + 4px, io);
+@include vp-anim($jupR + 6px, eur);
+@include vp-anim($jupR + 10px, gan);
+@include vp-anim($jupR + 18px, cal);
+
+.io {
+  $jioOrb: 2s * $baseUnit;
+  animation: rot-io $jioOrb infinite linear;
+}
+
+.eur {
+  $jeurOrb: 3.5s * $baseUnit;
+  animation: rot-eur $jeurOrb infinite linear;
+}
+
+.gan {
+  $jganOrb: 7s * $baseUnit;
+  animation: rot-gan $jganOrb infinite linear;
+}
+
+.cal {
+  $jcalOrb: 16.5s * $baseUnit;
+  animation: rot-cal $jcalOrb infinite linear;
+}
+
+.jup {
+  background-image: repeating-linear-gradient(
+    6deg,
+    #797663 22px,
+    #e1dcde 16px,
+    #c3a992 30px,
+    #e9ece2 30px
+  );
+}
+
+.spot {
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  border-radius: 8px / 6px;
+  top: $jupR + 10;
+  left: 50%;
+  background-color: #bc833b;
+  box-shadow: 0px 0px 5px #e1dcde;
+  border: solid 1px #e1dcde;
+  z-index: 300;
+  .nep & {
+    background-color: darken(#343ec5, 10%);
+    border: 0;
+    box-shadow: none;
+    top: 50%;
+    left: 45%;
+    width: 10px;
+    height: 6px;
+    margin: -2px;
+    border-radius: 5px / 3px;
+    border-left: solid 1px #7ed6fe;
+  }
+}
+
+$satD: 29px * 2;
+
+div[class$="-ring"] {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.7;
+  $tilt: 45deg;
+  transform: rotatex($tilt);
+}
+
+.a-ring {
+  $ringD: $satD + 61;
+}
