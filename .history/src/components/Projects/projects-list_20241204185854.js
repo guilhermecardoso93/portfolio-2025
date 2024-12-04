@@ -111,13 +111,13 @@ export const projects = [
     title: "The Weirdos NFTW Website",
     url: "https://the-weirdos-nft-website-starter-code-swart.vercel.app/",
     repo: "https://github.com/guilhermecardoso93/The-Weirdos-NFT-Website-Starter-Code",
-    img: "https://github.com/guilhermecardoso93/The-Weirdos-NFT-Website-Starter-Code/blob/main/287848500-0a5bd101-920b-4d32-b93c-e5c59288c31d.png?raw=true",
+    img: "https://github.com/guilhermecardoso93/The-Weirdos-NFT-Website-Starter-Code/blob/main/287848500-0a5bd101-920b-4d32-b93c-e5c59288c31d.png",
   },
   {
     title: "Barbie Site",
     url: "https://sitebarbie.vercel.app/",
     repo: "https://github.com/guilhermecardoso93/sitebarbie",
-    img: "https://github.com/guilhermecardoso93/sitebarbie/blob/master/392180632-7f777985-be1d-49e7-a5e8-5313e8950fb9.png?raw=true",
+    img: "https://github.com/guilhermecardoso93/sitebarbie/blob/master/392180632-7f777985-be1d-49e7-a5e8-5313e8950fb9.png",
   },
   {
     title: "Spotify TailwindCSS",
@@ -135,6 +135,6 @@ export const projects = [
     title: "Ignite Call",
     url: "https://ignite-call-eosin.vercel.app/",
     repo: "https://github.com/guilhermecardoso93/ignite-call",
-    img: "https://github.com/guilhermecardoso93/ignite-call/blob/part-8/392183821-a26757f0-d8c7-4852-8868-3030cbe56c92.png?raw=true",
+    img: "https://github.com/guilhermecardoso93/ignite-call/blob/part-8/392183821-a26757f0-d8c7-4852-8868-3030cbe56c92.png",
   },
 ];
