@@ -77,8 +77,6 @@
   flex-direction: column;
   gap: 1rem;
   height: 100%;
-  width: 100%;
-  align-items: center;
 }
 
 .desc-func {
@@ -110,7 +108,7 @@
 
 .fatos {
   background-color: var(--second-bg-color);
-  padding: 2rem;
+  padding: 0.8rem;
   border-radius: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -122,7 +120,6 @@
 
 .resume-item .year {
   color: var(--main-color);
-  width: 100%;
 }
 
 .resume-item h3 {

@@ -38,6 +38,7 @@
   margin: 1rem 0 2.5rem;
   line-height: 3.2rem;
   color: var(--main-color);
+  text-align: center;
   -webkit-text-stroke: 0.07rem var(--main-color);
   width: 80%;
 }
@@ -174,10 +175,6 @@
 
   .home-detail h2 {
     font-size: 2rem;
-  }
-
-  .home-detail p {
-    text-align: center;
   }
 
   .btn {

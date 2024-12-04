@@ -213,7 +213,7 @@ export function Resume() {
             <p className="desc">Alguns fatos e curiosidades</p>
 
             <div className="resume-list facts">
-              <div className="fatos">
+              <div>
                 <div className="resume-item">
                   <p> Nome:</p>
                   <span>Guilherme Cardoso da Silva</span>
@@ -232,24 +232,37 @@ export function Resume() {
                 </div>
 
                 <div className="resume-item">
-                  <p> Cidade:</p>
+                  <p>
+                    {" "}
+                    Cidade:
+                    
+                  </p>
                   <span>São Paulo | Curitiba </span>
                 </div>
                 <div className="resume-item">
-                  <p> Nacionalidade:</p>
-                  <span>Brasileiro </span>
+                  <p>
+                    {" "}
+                    Nacionalidade:
+                    <span>Brasileiro </span>
+                  </p>
                 </div>
                 <div className="resume-item">
-                  <p> Telefone:</p>
-                  <span>+55 22 99904-7309</span>
+                  <p>
+                    {" "}
+                    Telefone:
+                    <span>+55 22 99904-7309</span>
+                  </p>
                 </div>
                 <div className="resume-item">
                   <p> idiomas:</p>
                   <span>Português | English </span>
                 </div>
                 <div className="resume-item">
-                  <p> E-mail:</p>
-                  <span>guilherme_cardosogui@hotmail.com </span>
+                  <p>
+                    {" "}
+                    E-mail:
+                    <span>guilherme_cardosogui@hotmail.com </span>
+                  </p>
                 </div>
 
                 <div className="resume-item">

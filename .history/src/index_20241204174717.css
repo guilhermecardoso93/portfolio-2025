@@ -37,17 +37,6 @@ footer {
   position: fixed;
 }
 
-body::-webkit-scrollbar {
-  width: 8px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2);
-  /* Semi-transparent dark color */
-  border-radius: 1rem;
-}
-
-
 @media screen and (max-width: 1200px) {
   html {
     font-size: 60%;

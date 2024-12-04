@@ -213,7 +213,7 @@ export function Resume() {
             <p className="desc">Alguns fatos e curiosidades</p>
 
             <div className="resume-list facts">
-              <div className="fatos">
+              <div>
                 <div className="resume-item">
                   <p> Nome:</p>
                   <span>Guilherme Cardoso da Silva</span>
@@ -248,7 +248,11 @@ export function Resume() {
                   <span>Português | English </span>
                 </div>
                 <div className="resume-item">
-                  <p> E-mail:</p>
+                  <p>
+                    {" "}
+                    E-mail:
+                    
+                  </p>
                   <span>guilherme_cardosogui@hotmail.com </span>
                 </div>
 

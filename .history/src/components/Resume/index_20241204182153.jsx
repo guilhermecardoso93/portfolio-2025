@@ -213,7 +213,7 @@ export function Resume() {
             <p className="desc">Alguns fatos e curiosidades</p>
 
             <div className="resume-list facts">
-              <div className="fatos">
+              <div>
                 <div className="resume-item">
                   <p> Nome:</p>
                   <span>Guilherme Cardoso da Silva</span>

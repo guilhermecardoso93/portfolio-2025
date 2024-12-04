@@ -213,7 +213,7 @@ export function Resume() {
             <p className="desc">Alguns fatos e curiosidades</p>
 
             <div className="resume-list facts">
-              <div className="fatos">
+              <div>
                 <div className="resume-item">
                   <p> Nome:</p>
                   <span>Guilherme Cardoso da Silva</span>
@@ -254,7 +254,7 @@ export function Resume() {
 
                 <div className="resume-item">
                   <p> Algumas Fatos Legais:</p>
-                  <div className="fatos">
+                  <div>
                     {" "}
                     <span>Tenho dos Gatos : NingNing & Kook </span>
                     <span>Tenho um irmão gêmeo </span>

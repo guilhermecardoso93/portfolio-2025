@@ -211,47 +211,75 @@ export function Resume() {
               Sobre <span>Mim</span>
             </h2>
             <p className="desc">Alguns fatos e curiosidades</p>
-
-            <div className="resume-list facts">
-              <div className="fatos">
+            <div className="resume-list">
+              <div>
                 <div className="resume-item">
-                  <p> Nome:</p>
-                  <span>Guilherme Cardoso da Silva</span>
+                  <p>
+                    {" "}
+                    Nome:
+                    <span>Guilherme Cardoso da Silva</span>
+                  </p>
                 </div>
                 <div className="resume-item">
-                  <p> Gênero:</p>
-                  <span>Homem</span>
+                  <p>
+                    {" "}
+                    Gênero:
+                    <span>Homem</span>
+                  </p>
                 </div>
                 <div className="resume-item">
-                  <p> Idade:</p>
-                  <span>{idade} </span>
+                  <p>
+                    {" "}
+                    Idade:
+                    <span>{idade} </span>
+                  </p>
                 </div>
                 <div className="resume-item">
-                  <p> Status:</p>
-                  <span>Solteiro </span>
+                  <p>
+                    {" "}
+                    Status:
+                    <span>Solteiro </span>
+                  </p>
                 </div>
-
+              </div>
+              <div>
                 <div className="resume-item">
-                  <p> Cidade:</p>
-                  <span>São Paulo | Curitiba </span>
-                </div>
-                <div className="resume-item">
-                  <p> Nacionalidade:</p>
-                  <span>Brasileiro </span>
-                </div>
-                <div className="resume-item">
-                  <p> Telefone:</p>
-                  <span>+55 22 99904-7309</span>
-                </div>
-                <div className="resume-item">
-                  <p> idiomas:</p>
-                  <span>Português | English </span>
+                  <p>
+                    {" "}
+                    Cidade:
+                    <span>São Paulo | Curitiba </span>
+                  </p>
                 </div>
                 <div className="resume-item">
-                  <p> E-mail:</p>
-                  <span>guilherme_cardosogui@hotmail.com </span>
+                  <p>
+                    {" "}
+                    Nacionalidade:
+                    <span>Brasileiro </span>
+                  </p>
                 </div>
-
+                <div className="resume-item">
+                  <p>
+                    {" "}
+                    Telefone:
+                    <span>+55 22 99904-7309</span>
+                  </p>
+                </div>
+                <div className="resume-item">
+                  <p>
+                    {" "}
+                    idiomas:
+                    <span>Português | English </span>
+                  </p>
+                </div>
+                <div className="resume-item">
+                  <p>
+                    {" "}
+                    E-mail:
+                    <span>guilherme_cardosogui@hotmail.com </span>
+                  </p>
+                </div>
+              </div>
+              <div>
                 <div className="resume-item">
                   <p> Algumas Fatos Legais:</p>
                   <div className="fatos">

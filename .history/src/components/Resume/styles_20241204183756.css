@@ -1,3 +1,4 @@
+/* Resume Container */
 .resume-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -5,6 +6,7 @@
   margin-top: 4rem;
 }
 
+/* Resume Box Styles */
 .resume-box h2 {
   font-size: 4.5rem;
 }
@@ -30,6 +32,7 @@
   margin-bottom: 2rem;
   border-radius: 0.8rem;
   cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
 }
 
 .resume-box .resume-btn.active {
@@ -50,6 +53,7 @@
   text-align: center;
 }
 
+/* Resume List Styles */
 .resume-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -63,61 +67,26 @@
 }
 
 .resume-list::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent scrollbar thumb */
   border-radius: 1rem;
 }
 
 .resume-list .resume-item {
   background-color: var(--second-bg-color);
-  padding: 0.8rem;
-  border-radius: 2.5rem;
   padding: 3rem 2.5rem;
-  height: calc((45rem - 2rem) / 2);
+  border-radius: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
   height: 100%;
   width: 100%;
-  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.desc-func {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.cursos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.cursos .resume-item, .fatos {
-  background-color: var(--second-bg-color);
-  padding: 0.8rem;
-  border-radius: 2.5rem;
-  padding: 3rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  width: 45%;
-  height: 25rem;
-}
-
-.fatos {
-  background-color: var(--second-bg-color);
-  padding: 2rem;
-  border-radius: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  height: 100%;
-  width: 100%;
+.resume-list .resume-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .resume-item .year {
@@ -135,37 +104,31 @@
   margin-bottom: 2rem;
 }
 
-.jobs {
-  display: flex;
-  height: 100%;
-}
-
-
-
 .resume-item .company::before {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  padding: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
   background: var(--main-color);
   border-radius: 50%;
   margin-left: -2rem;
 }
 
+/* Skills Section */
 .resume-details.skills .resume-list {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 .resume-details.skills .resume-item {
-  position: relative;
   align-items: center;
   height: auto;
   margin-top: 5rem;
 }
 
 .resume-details.skills .resume-item img {
-  transition: 0, 5;
+  transition: transform 0.5s ease;
 }
 
 .resume-details.skills .resume-item .skills-icon:hover {
@@ -184,7 +147,6 @@
   opacity: 0;
   transform: scale(0.9);
   transition: all 0.3s ease;
-  /* Para suavizar as animações */
 }
 
 .resume-details.skills .resume-item:hover span {
@@ -193,10 +155,10 @@
   transform: scale(1);
 }
 
+/* About Section */
 .resume-details.about .resume-list {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .resume-details.about .resume-item {
@@ -217,14 +179,11 @@
   font-size: 1.8rem;
 }
 
+/* Habilidades Section */
 .resume-list .habilidades {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
   background-color: var(--second-bg-color);
-  padding: 0.8rem;
-  border-radius: 2.5rem;
   padding: 3rem 2.5rem;
+  border-radius: 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -232,39 +191,7 @@
   height: 100%;
 }
 
-.hab {
-  height: 100%;
-}
-
-.resume-list .habilidades .company {
-  position: relative;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
-}
-
-.resume-list .habilidades .company::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0.5rem;
-  background: var(--main-color);
-  border-radius: 50%;
-  margin-left: -2rem;
-}
-
-.facts {
-  height: 100%;
-}
-
-.fatos {
-  display: flex;
-  flex-direction: column;
-  font-size: 2.5rem;
-  gap: 1rem;
-}
-
-
+/* Responsive Design */
 @media screen and (max-width: 700px) {
   .resume-container {
     gap: 1rem;
@@ -276,24 +203,17 @@
 
   .jobs {
     flex-direction: column;
-    font-size: 1rem;
   }
 
   .jobs .resume-item {
     align-items: center;
   }
 
-  .jobs h3 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .jobs .year {
-    font-size: 1.5rem;
-  }
-
+  .jobs h3,
+  .jobs .year,
   .jobs .company {
     font-size: 1.5rem;
+    text-align: center;
   }
 
   .jobs p {
@@ -311,9 +231,6 @@
   }
 
   .fatos {
-    display: flex;
-    flex-direction: column;
     font-size: 1.3rem;
   }
-
 }
