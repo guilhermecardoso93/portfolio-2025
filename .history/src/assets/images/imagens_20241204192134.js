@@ -7,4 +7,3 @@ import img21 from "./21.png";
 import img23 from "./23.png";
 
 export const imagens = [img16, img17, img18, img19, img20, img21, img23];
-

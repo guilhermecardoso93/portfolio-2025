@@ -1,10 +1,5 @@
-import img16 from "../../assets/images/16.png";
-import img17 from "../../assets/images/17.png";
-import img18 from "../../assets/images/18.png";
-import img19 from "../../assets/images/19.png";
-import img20 from "../../assets/images/20.png";
-import img21 from "../../assets/images/21.png";
-import img23 from "../../assets/images/23.png";
+// Importação de imagens locais
+import imagens from "../../assets/images/imagens";
 
 // Array de projetos com detalhes sobre cada um
 export const projects = [
