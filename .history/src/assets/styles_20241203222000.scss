@@ -79,6 +79,21 @@ body {
   background-repeat: no-repeat;
 }
 
+$star-speed: 0.5s;
+$bg-color: #011; // Cor do fundo do céu
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
 @each $planet in $planets {
   $name: nth($planet, 1);
   $orb: nth($planet, 2);
@@ -250,5 +265,3 @@ div[class$="-ring"] {
 .a-ring {
   $ringD: $satD + 61;
 }
-
-

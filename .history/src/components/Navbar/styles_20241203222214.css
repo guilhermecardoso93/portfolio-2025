@@ -165,7 +165,7 @@ body.show-mobile-menu .nav-menu {
 }
 
 /* Estilos responsivos */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
 
   #menu-close-button,
   #menu-open-button {
@@ -218,7 +218,7 @@ body.show-mobile-menu .nav-menu {
   }
 
   50% {
-    background: #b22cff;
+    background: #1229ac;
   }
 
   100% {
@@ -232,7 +232,7 @@ body.show-mobile-menu .nav-menu {
   }
 
   50% {
-    background: #3505b9;
+    background: #1229ac;
   }
 
   100% {

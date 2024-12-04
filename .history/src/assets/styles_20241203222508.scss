@@ -222,7 +222,7 @@ $jupR: 35px;
   border: solid 1px #e1dcde;
   z-index: 300;
   .nep & {
-    background-color: darken(#343ec5, 10%);
+    background-color: #343ec5;
     border: 0;
     box-shadow: none;
     top: 50%;
@@ -251,4 +251,39 @@ div[class$="-ring"] {
   $ringD: $satD + 61;
 }
 
+$star-size: 1px;
+$star-opacity: 0.8;
+$star-speed: 0.5s;
+$bg-color: #011; // Cor do fundo do céu
 
+@keyframes twinkle {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  width: $star-size;
+  height: $star-size;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: twinkle $star-speed infinite;
+  opacity: $star-opacity;
+}

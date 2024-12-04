@@ -52,6 +52,7 @@ body {
   min-height: 2700px * $scale;
 }
 
+
 .system {
   position: relative;
   top: 0;
@@ -61,10 +62,9 @@ body {
   transform: scale($scale);
 }
 @media screen and (max-width: 900px) {
-  .system {
-    display: none;
-  }
+ .system{display: none;}
 }
+
 
 .sun {
   width: $sunRad * 2;
@@ -250,5 +250,3 @@ div[class$="-ring"] {
 .a-ring {
   $ringD: $satD + 61;
 }
-
-
