@@ -1,5 +1,5 @@
-@use 'sass:list';
-@use 'sass:math'; // Importando o módulo math para usar math.div
+@use "sass:list";
+@use "sass:math"; // Importando o módulo math para usar math.div
 
 @mixin vp-anim($radius, $pname, $deg: 360deg) {
   @-webkit-keyframes rot-#{$pname} {
@@ -27,6 +27,7 @@
     }
   }
 }
+@use 'sass:math'; // Import math module
 
 $baseUnit: 0.1; // Velocidade do sistema
 $sunRad: 72px; // Raio do sol
@@ -34,7 +35,8 @@ $rFactor: 2; // Fator para ajustar o raio das órbitas
 $middleOffset: 800px;
 
 $scale: 0.75; // Escala para ajustar a visualização
-$middle: $middleOffset * math.div(1, $scale); // Substituindo divisão com math.div()
+$middle: $middleOffset * math.div(1, $scale); // Using math.div instead of /
+
 
 $planets: (
   ("mer", 8.8s * $baseUnit, (6px * $rFactor) + $sunRad, 1.75px, #888),
@@ -115,7 +117,7 @@ body {
     position: absolute;
     top: $middle;
     left: 50%;
-    margin: math.div($orbitPath, 2);  // Usando math.div para a divisão
+    margin: math.div($orbitPath, 2); // Usando math.div para a divisão
     border: solid 1px #444;
   }
 }

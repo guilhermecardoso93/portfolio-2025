@@ -34,7 +34,7 @@ $rFactor: 2; // Fator para ajustar o raio das órbitas
 $middleOffset: 800px;
 
 $scale: 0.75; // Escala para ajustar a visualização
-$middle: $middleOffset * math.div(1, $scale); // Substituindo divisão com math.div()
+$middle: $middleOffset * (1 / $scale);
 
 $planets: (
   ("mer", 8.8s * $baseUnit, (6px * $rFactor) + $sunRad, 1.75px, #888),
