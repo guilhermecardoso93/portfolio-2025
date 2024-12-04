@@ -93,13 +93,13 @@ export const projects = [
     title: "Olá Mundo Alura",
     url: "https://ola-mundo-alura-opal.vercel.app/",
     repo: "https://github.com/guilhermecardoso93/ola-mundo-alura",
-    img: "https://github.com/guilhermecardoso93/ola-mundo-alura/blob/master/392176588-deef0706-61fb-4f26-ac7f-0da25cb75c84.png",
+    img: "https://private-user-images.githubusercontent.com/79944203/392176588-deef0706-61fb-4f26-ac7f-0da25cb75c84.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMzNDg4MjUsIm5iZiI6MTczMzM0ODUyNSwicGF0aCI6Ii83OTk0NDIwMy8zOTIxNzY1ODgtZGVlZjA3MDYtNjFmYi00ZjI2LWFjN2YtMGRhMjVjYjc1Yzg0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjA0VDIxNDIwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTY1NjI4MWZiZGJiMGE4NjI5ODUzNTBjYTUyNmUwNjUyZWI0NGM4OTNjMDRmMjA5ODIwY2Y5NTY3YWM3NjZmN2QmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.vovcHxEkAV141S0_xZ0GKNnBKR11y0o6_UPupz7koKM",
   },
   {
     title: "Geek Alura",
     url: "https://alura-geek-eight-mocha.vercel.app/",
     repo: "https://github.com/guilhermecardoso93/alura-geek",
-    img: "https://github.com/guilhermecardoso93/alura-geek/blob/master/392177265-bf5d0a4e-cd10-4bc9-a78c-5e906b6cb33c.png",
+    img: "https://private-user-images.githubusercontent.com/79944203/392177265-bf5d0a4e-cd10-4bc9-a78c-5e906b6cb33c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMzNDg3OTcsIm5iZiI6MTczMzM0ODQ5NywicGF0aCI6Ii83OTk0NDIwMy8zOTIxNzcyNjUtYmY1ZDBhNGUtY2QxMC00YmM5LWE3OGMtNWU5MDZiNmNiMzNjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjA0VDIxNDEzN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM3MzEwMDY2ZTFiNmJlMjc0MzAxMmU2OWQ1Mjc5ZWU4NGI4ZWEwMzc5MTRiOGFiOTZiN2U2M2QxMzliM2RlOTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.c9mAuygymKCrZmNWIzYbQk5HDR7SgwUlNpXxSYRHGEs",
   },
   {
     title: "NLW Expert Notes",
