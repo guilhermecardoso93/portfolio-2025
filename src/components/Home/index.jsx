@@ -6,7 +6,7 @@ import {
   MessageCircleHeart,
   Twitter,
 } from "lucide-react";
-import img from "../../assets/foto.png";
+import photo from "../../assets/new-photo.png";
 import "./styles.css";
 
 
@@ -115,7 +115,7 @@ export function Home() {
         <div className="img-box color-change-3x">
           <div className="img-item ">
             <img
-              src={img}
+              src={photo}
               alt="Imagem de Guilherme Cardoso"
               className="profile-img"
             />
