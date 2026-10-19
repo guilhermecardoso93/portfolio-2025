@@ -9,6 +9,25 @@ import {
 import img from "../../assets/foto.png";
 import "./styles.css";
 
+
+
+function calcularIdade(dataNascimento) {
+  const hoje = new Date();
+  const nascimento = new Date(dataNascimento);
+
+  let idade = hoje.getFullYear() - nascimento.getFullYear();
+
+  if (
+    hoje.getMonth() < nascimento.getMonth() ||
+    (hoje.getMonth() === nascimento.getMonth() &&
+      hoje.getDate() < nascimento.getDate())
+  ) {
+    idade--;
+  }
+
+  return idade;
+}
+
 export function Home() {
   return (
     <section className="home">
@@ -23,24 +42,24 @@ export function Home() {
         </h1>
 
         <h2>Eu sou um Dev. Front-End Júnior</h2>
-        <p>
-          Olá! Sou Guilherme, tenho 31 anos e estou em busca de novas
-          oportunidades profissionais. Atualmente, estou focado em cargos de
-          Assistente Administrativo e Desenvolvedor Front-End Júnior (React).
-          Tenho disponibilidade para atuar em São Paulo, a partir de janeiro de
-          2025. Iniciei minha trajetória profissional em 2010, na mesma empresa,
-          onde comecei como repositor e, ao longo dos anos, cresci dentro da
-          organização, passando para a área administrativa. <br />
-          Nessa jornada, evoluí de auxiliar administrativo para assistente
-          administrativo, função que me permitiu aprender e desenvolver diversas
-          habilidades importantes na área. Além disso, durante minha
-          adolescência, dei aulas de informática, o que me proporcionou um
-          conhecimento sólido e acima da média em tecnologia, algo que utilizo
-          no meu dia a dia e que me impulsionou a buscar uma carreira em
-          desenvolvimento front-end e na área administrativa. Ficarei muito
-          grato por qualquer apoio ou oportunidade que me permita continuar
-          evoluindo e contribuindo em novos desafios!
-        </p>
+         <p>
+        Olá! Sou Guilherme, tenho {calcularIdade("1993-09-24")} anos e estou em
+        busca de novas oportunidades profissionais. Atualmente, estou focado em
+        cargos de Assistente Administrativo e Desenvolvedor Front-End Júnior
+        (React). Tenho disponibilidade para atuar em São Paulo. Iniciei minha
+  trajetória profissional em 2010, na mesma empresa, onde comecei como
+  repositor e, ao longo dos anos, cresci dentro da organização, passando
+  para a área administrativa.
+  <br />
+  Nessa jornada, evoluí de auxiliar administrativo para assistente
+  administrativo, função que me permitiu aprender e desenvolver diversas
+  habilidades importantes na área. Além disso, durante minha adolescência,
+  dei aulas de informática, o que me proporcionou um conhecimento sólido
+  em tecnologia e me impulsionou a buscar uma carreira em desenvolvimento
+  front-end e na área administrativa. Ficarei muito grato por qualquer
+  apoio ou oportunidade que me permita continuar evoluindo e contribuindo
+  em novos desafios!
+</p>
         <div className="btn-sci">
           <a href="/path-to-cv.pdf" className="btn" download>
             Download CV
